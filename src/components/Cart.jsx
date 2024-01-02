@@ -8,10 +8,8 @@ class Cart extends Component {
     }
     render() {
         return (
-            <div>
-                <div className='nav-container'>
-                    <Nav />
-                </div>
+            <div className='container'>
+                <Nav />
                 <div className='cart-container'>
                     <h1>Cart</h1>
                 </div>

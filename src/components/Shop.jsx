@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import { render } from 'react-dom';
 import Nav from './Nav.jsx';
-import Cart from './Cart.jsx';
 
 class Shop extends Component {
     constructor() {
@@ -9,21 +8,19 @@ class Shop extends Component {
     }
     render() {
         return (
-            <>
-                <div>
-                    <div className='nav-container'>
-                        <Nav />
+            <div className='container'>
+                <Nav />
+                <div className='shop-container'>
+                    <div id='shop-header'>
+                        <h1>Products</h1>
                     </div>
-                    <div className='shop-container'>
-                        <div id='shop-header'>Products</div>
-                        <div id='shop-product'>
-                            <div>Scarf</div>
-                            <div>Gloves</div>
-                            <div>Beanie</div>
-                        </div>
+                    <div id='shop-product'>
+                        <div>Scarf</div>
+                        <div>Gloves</div>
+                        <div>Beanie</div>
                     </div>
                 </div>
-            </>
+            </div>
         )
     }
 }

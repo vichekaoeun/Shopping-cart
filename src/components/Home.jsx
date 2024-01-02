@@ -9,19 +9,15 @@ class Home extends Component {
 
     render() {
         return (
-            <>
-                <div>
-                    <div className='nav-container'>
-                        <Nav />
-                    </div>
-                    <div className='home-container'>
-                        <div id='home-header'><h1>Header</h1></div>
-                        <div id='home-description'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Sapiente totam quas veniam iure qui quos illo esse. Reiciendis
-                            dolorum autem animi sint id error veritatis cum, eligendi fuga amet nesciunt!</div>
-                    </div>
+            <div className='container'>
+                <Nav />
+                <div className='home-container'>
+                    <div id='home-header'><h1>Header</h1></div>
+                    <div id='home-description'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Sapiente totam quas veniam iure qui quos illo esse. Reiciendis
+                        dolorum autem animi sint id error veritatis cum, eligendi fuga amet nesciunt!</div>
                 </div>
-            </>
+            </div>
         )
     }
 }
