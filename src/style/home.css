@@ -1,0 +1,8 @@
+.home-container {
+    display: grid;
+    justify-content: center;
+}
+
+#home-description {
+    max-width: 500px;
+}

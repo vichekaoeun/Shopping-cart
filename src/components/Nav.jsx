@@ -11,14 +11,16 @@ class Nav extends Component {
     render() {
         return (
             <div className='nav-container'>
-                <div id='Home'>
-                    <Link to='/'>Home</Link>
-                </div>
-                <div id='Shop'>
-                    <Link to='/shop'>Shopping</Link>
-                </div>
-                <div id='Cart'>
-                    <Link to='/cart'>Cart</Link>
+                <div id='nav-items'>
+                    <div id='Home'>
+                        <Link to='/'>Home</Link>
+                    </div>
+                    <div id='Shop'>
+                        <Link to='/shop'>Shopping</Link>
+                    </div>
+                    <div id='Cart'>
+                        <Link to='/cart'>Cart</Link>
+                    </div>
                 </div>
             </div>
         )

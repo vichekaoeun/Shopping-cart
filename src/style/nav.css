@@ -1,0 +1,10 @@
+.nav-container {
+    grid-row: 1 / 2;
+    background-color: aliceblue;
+}
+
+#nav-items {
+    max-width: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
