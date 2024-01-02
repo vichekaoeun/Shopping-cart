@@ -1,5 +1,6 @@
 import React, { Component, useState } from 'react'
-import { render, Link } from 'react-dom';
+import { render } from 'react-dom';
+import { Link } from 'react-router-dom';
 
 class Nav extends Component {
     constructor() {
