@@ -1,6 +1,7 @@
 .nav-container {
     grid-row: 1 / 2;
     background-color: aliceblue;
+    padding: 10px;
 }
 
 #nav-items {
