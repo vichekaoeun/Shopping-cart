@@ -12,11 +12,17 @@ const Router = () => {
         },
         {
             path: '/shop',
-            element: <Shop />
+            element: <Shop />,
+            children: [
+                { path: 'shop/cart', element: <Cart /> }
+            ],
         },
         {
             path: '/cart',
-            element: <Cart />
+            element: <Cart />,
+            children: [
+                { path: 'cart/shop', element: <Shop /> }
+            ],
         }
     ]);
     return <RouterProvider router={router} />

@@ -15,10 +15,10 @@ class Nav extends Component {
                         <Link to='/'>Home</Link>
                     </div>
                     <div id='Shop'>
-                        <Link to='shop'>Shopping</Link>
+                        <Link to='/shop'>Shopping</Link>
                     </div>
                     <div id='Cart'>
-                        <Link to='cart'>Cart</Link>
+                        <Link to='/cart'>Cart</Link>
                     </div>
                 </div>
             </>

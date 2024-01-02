@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { render } from 'react-dom';
 import Nav from './Nav.jsx';
+import Cart from './Cart.jsx';
 
 class Shop extends Component {
     constructor() {
