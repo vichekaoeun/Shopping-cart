@@ -19,7 +19,7 @@ class Nav extends Component {
                         <Link to='/shop'>Shopping</Link>
                     </div>
                     <div id='Cart'>
-                        <Link to='/cart'>Cart</Link>
+                        <Link to='/cart'>Cart:</Link>
                     </div>
                 </div>
             </div>
