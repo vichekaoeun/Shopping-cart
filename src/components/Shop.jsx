@@ -5,6 +5,8 @@ import '../style/shop.css';
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [cart, setCart] = useState([]);
+    const [total, setTotal] = useState(0);
 
     useEffect(() => {
         fetch('https://fakestoreapi.com/products/category/jewelery')
@@ -18,6 +20,26 @@ const Shop = () => {
                 setLoading(false);
             });
     }, []);
+
+    const handleAdd = (product) => {
+        const updatedCart = [...cart, product];
+        setCart(updatedCart);
+
+        const updatedTotal = updatedCart.reduce((accumulator, currentValue) => {
+            return accumulator + currentValue.price;
+        }, 0);
+        setTotal(updatedTotal);
+    }
+
+    const handleRemove = (productID) => {
+        const updatedCart = cart.filter(product => product.id !== productID);
+        setCart(updatedCart);
+
+        const updatedTotal = updatedCart.reduce((accumulator, currentValue) => {
+            return accumulator + currentValue.price;
+        }, 0);
+        setTotal(updatedTotal);
+    }
 
     return (
         <div className='container'>
@@ -37,8 +59,8 @@ const Shop = () => {
                                     <div id='product-title'><p><i>{product.title}</i></p></div>
                                     <div id='product-price'><p>Price: {product.price}</p></div>
                                     <div id='product-button'>
-                                        <div><button>Add</button></div>
-                                        <div><button>Remove</button></div>
+                                        <div><button onClick={() => handleAdd(product)}>Add</button></div>
+                                        <div><button onClick={() => handleRemove(product.id)}>Remove</button></div>
                                     </div>
                                 </div>
                             </li>
