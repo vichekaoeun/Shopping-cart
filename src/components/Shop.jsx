@@ -23,6 +23,7 @@ const Shop = () => {
                     <ul>{products.map(product => (
                         <li key={product.id}>
                             <div id='product'>
+                                <div id='product-image'><img src={product.image} /></div>
                                 <div id='product-title'><p><i>{product.title}</i></p></div>
                                 <div id='product-price'><p>Price: {product.price}</p></div>
                                 <div id='product-button'>
