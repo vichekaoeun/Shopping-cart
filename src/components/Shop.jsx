@@ -22,9 +22,13 @@ const Shop = () => {
                 <div id='shop-product'>
                     <ul>{products.map(product => (
                         <li key={product.id}>
-                            <div>
-                                <p>{product.title}</p>
-                                <p>Price: {product.price}</p>
+                            <div id='product'>
+                                <div id='product-title'><p><i>{product.title}</i></p></div>
+                                <div id='product-price'><p>Price: {product.price}</p></div>
+                                <div id='product-button'>
+                                    <div><button>Add</button></div>
+                                    <div><button>Remove</button></div>
+                                </div>
                             </div>
                         </li>
                     ))}</ul>

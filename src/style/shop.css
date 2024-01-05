@@ -1,3 +1,28 @@
 li {
     list-style: none;
 }
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 11rem);
+    justify-content: center;
+
+}
+
+#product {
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: aliceblue;
+    height: 250px;
+    margin: 1rem;
+}
+
+#product-title {
+    height: 110px;
+}
+
+#product-button {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
