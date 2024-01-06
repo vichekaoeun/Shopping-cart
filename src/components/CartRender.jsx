@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import React, { Component, useState } from 'react'
 import '../style/cart.css'
 import Shop from '../components/Shop.jsx'
+import { Link } from 'react-router-dom';
 
 const CartRender = ({ total }) => {
     return (
@@ -12,6 +13,11 @@ const CartRender = ({ total }) => {
                     <div><h1>Cart</h1></div>
                     <div>item</div>
                     <div>total: {total}</div>
+                    <div>
+                        <button>
+                            <Link to='/cart' className='checkout-btn'>Checkout</Link>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
