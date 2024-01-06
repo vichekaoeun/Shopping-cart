@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Nav from './Nav.jsx';
 import '../style/shop.css';
+import Cart from '../components/Cart.jsx'
+import CartRender from '../components/CartRender.jsx'
+
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
@@ -32,14 +35,19 @@ const Shop = () => {
     }
 
     const handleRemove = (productID) => {
-        const updatedCart = cart.filter(product => product.id !== productID);
+        const productIndex = cart.findIndex((product) => product.id === productID);
+
+        if (productIndex === -1) {
+            return;
+        }
+
+        const updatedCart = [...cart];
+        updatedCart.splice(productIndex, 1);
         setCart(updatedCart);
 
-        const updatedTotal = updatedCart.reduce((accumulator, currentValue) => {
-            return accumulator + currentValue.price;
-        }, 0);
+        const updatedTotal = total - cart[productIndex].price;
         setTotal(updatedTotal);
-    }
+    };
 
     return (
         <div className='container'>
@@ -68,6 +76,7 @@ const Shop = () => {
                     )}
                 </div>
             </div>
+            <CartRender total={total} />
         </div>
     );
 };
