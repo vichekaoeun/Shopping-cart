@@ -76,7 +76,7 @@ const Shop = () => {
                     )}
                 </div>
             </div>
-            <CartRender total={total} />
+            <CartRender total={total} cart={cart} />
         </div>
     );
 };
