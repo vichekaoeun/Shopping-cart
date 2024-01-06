@@ -1,11 +1,11 @@
 import React from 'react'
 import '../style/cart.css'
-import { Link } from 'react-router-dom';
 
 const CartRender = ({ total, cart }) => {
-    const totalPrice = { total };
-    const item = { cart };
-    const itemCount = item.length;
+    const handleClick = () => {
+        alert('This does nothing, it is a fake store for educational purposes.')
+    }
+
     return (
         <div className='container'>
             <div className='cart-container'>
@@ -14,8 +14,8 @@ const CartRender = ({ total, cart }) => {
                     <div>item: {cart ? cart.length : 0}</div>
                     <div>total: {total}</div>
                     <div>
-                        <button>
-                            <Link to='/cart' className='checkout-btn'>Checkout</Link>
+                        <button onClick={handleClick}>
+                            Checkout
                         </button>
                     </div>
                 </div>
