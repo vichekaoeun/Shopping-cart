@@ -5,6 +5,9 @@ import Shop from '../components/Shop.jsx'
 import { Link } from 'react-router-dom';
 
 const CartRender = ({ total, cart }) => {
+    const totalPrice = { total };
+    const item = { cart };
+    const itemCount = item.length;
     return (
         <div className='container'>
             <div className='cart-container'>

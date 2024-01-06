@@ -45,7 +45,8 @@ const Shop = () => {
         updatedCart.splice(productIndex, 1);
         setCart(updatedCart);
 
-        const updatedTotal = total - cart[productIndex].price;
+        const removedProduct = cart[productIndex];
+        const updatedTotal = (total - removedProduct.price).toFixed(2);
         setTotal(updatedTotal);
     };
 
