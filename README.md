@@ -1,8 +1,11 @@
-# React + Vite
+# Shopping Cart
+This is a simple shopping cart React project I built to learn React.
+## Implementation
+**API**: it fetches data from https://fakestoreapi.com/ to provide the product images, product prices and product names
+**Routes**: I created routes between the home page and shopping page
+**States & Effect**: I used states to update changes within components and props share component states
+**Styling**: it uses regular CSS
+**Host**: I use Vercel to host the website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Demo
+[Demo here](https://shopping-cart-iota-ten.vercel.app/)
