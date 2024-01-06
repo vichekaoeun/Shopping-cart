@@ -1,5 +1,4 @@
 import React, { Component, useState } from 'react'
-import { render } from 'react-dom';
 import Nav from './Nav.jsx';
 import '../style/home.css'
 

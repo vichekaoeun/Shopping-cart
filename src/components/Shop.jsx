@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Nav from './Nav.jsx';
 import '../style/shop.css';
-import Cart from '../components/Cart.jsx'
 import CartRender from '../components/CartRender.jsx'
 
 

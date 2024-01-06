@@ -1,5 +1,4 @@
-import React, { Component, useState } from 'react'
-import { render } from 'react-dom';
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import '../style/nav.css'
 
@@ -17,9 +16,6 @@ class Nav extends Component {
                     </div>
                     <div id='Shop'>
                         <Link to='/shop'>Shopping</Link>
-                    </div>
-                    <div id='Cart'>
-                        <Link to='/cart'>Cart:</Link>
                     </div>
                 </div>
             </div>

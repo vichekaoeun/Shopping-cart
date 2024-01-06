@@ -1,7 +1,5 @@
-import { render } from 'react-dom';
-import React, { Component, useState } from 'react'
+import React from 'react'
 import '../style/cart.css'
-import Shop from '../components/Shop.jsx'
 import { Link } from 'react-router-dom';
 
 const CartRender = ({ total, cart }) => {
