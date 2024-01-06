@@ -4,7 +4,7 @@ import React, { Component, useState } from 'react'
 import '../style/cart.css'
 import Shop from '../components/Shop.jsx'
 
-const Cart = ({ total }) => {
+const Cart = () => {
     return (
         <div className='container'>
             <Nav />
@@ -12,7 +12,7 @@ const Cart = ({ total }) => {
                 <div id='cart-content'>
                     <div><h1>Cart</h1></div>
                     <div>item</div>
-                    <div>total: {total}</div>
+                    <div>total:</div>
                 </div>
             </div>
         </div>
